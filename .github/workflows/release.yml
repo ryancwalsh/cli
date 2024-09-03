@@ -262,7 +262,7 @@ jobs:
           GITHUB_EVENT: ${{ github.event_name }}
 
       - name: get linux zip artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: bw-linux-${{ env.PACKAGE_VERSION }}.zip
           path: ./dist/snap
